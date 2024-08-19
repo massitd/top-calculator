@@ -48,6 +48,7 @@ body {
     height: 60px;
     margin: 4px;
     text-align: center;
+    border-radius: 8px;;
 }
 
 .controls {
