@@ -1,1 +1,1 @@
-
+This project from the Odin Project was to build a calculator. In their program, this is the culmination of the introduction lessons. It exemplifies the use of HTML, CSS and JS.
