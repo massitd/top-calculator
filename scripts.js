@@ -109,8 +109,24 @@ button9.addEventListener("click", () => {
     displayUpdate();
 })
 
+let button0 = document.getElementById("zero");
+button0.addEventListener("click", () => {
+    lastNumber = activeNumber;
+    addDigit(0);
+    displayUpdate();
+})
+
 // operator buttons
 let tempNumber = 0;
+
+let divideOperator = document.getElementById("divide");
+divideOperator.addEventListener("click", () => {
+    operator = "divide";
+    tempNumber = activeNumber;
+    activeNumber = 0;
+    displayUpdate();
+});
+
 let multiplyOperator = document.getElementById("multiply");
 multiplyOperator.addEventListener("click", () => {
     operator = "multiply";
@@ -118,6 +134,23 @@ multiplyOperator.addEventListener("click", () => {
     activeNumber = 0;
     displayUpdate();
 });
+
+let subtractOperator = document.getElementById("subtract");
+subtractOperator.addEventListener("click", () => {
+    operator = "subtract";
+    tempNumber = activeNumber;
+    activeNumber = 0;
+    displayUpdate();
+});
+
+let addOperator = document.getElementById("add");
+addOperator.addEventListener("click", () => {
+    operator = "add";
+    tempNumber = activeNumber;
+    activeNumber = 0;
+    displayUpdate();
+});
+
 
 //active number concat
 function addDigit(a) {
